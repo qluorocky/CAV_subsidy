@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "a": 0.108,
+    "b": 0.957,
+    "market": 200.0,
+    "benefit_scale": 6000.0,
+    "beta": 0.33,
+    "sigma": 1.1,
+    "r_government": 0.1,
+    "r_agent": 0.1,
+    "effort_cost": 10.0,
+    "w_max": 10.0,
+    "a_min": 0.05,
+    "a_max": 0.2,
+    "subsidy_max": 1.0,
+    "sensitivity_max": 2.0
+  },
+  "grid": 25,
+  "hjb": {
+    "iterations": 152,
+    "final_error": 8.525646308044088e-06,
+    "converged": true,
+    "fixed_sensitivity": 1.0,
+    "subsidy_cap": 1.0
+  },
+  "scope": "all",
+  "notes": [
+    "HJB fixes Y=1 as in main_effort.m.",
+    "Figure 7 is an analogue at W\u22484.2; source lacks exact figure settings.",
+    "Figure 12 follows the parameter alternatives in subsidy_1.m and subsidy_2.m."
+  ],
+  "sensitivity": {
+    "fig8_benefit_scale": {
+      "all_converged": true
+    },
+    "fig8_beta": {
+      "all_converged": true
+    },
+    "fig9_contagion": {
+      "all_converged": true
+    }
+  }
+}

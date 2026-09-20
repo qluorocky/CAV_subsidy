@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "av-subsidy-reproduction"
+version = "0.1.0"
+description = "Python numerical experiments for Luo et al. (2019) AV subsidies"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7"]
+
+[project.scripts]
+av-subsidy-figures = "av_subsidy.figures:main"
+
+[tool.setuptools.packages.find]
+include = ["av_subsidy*"]
